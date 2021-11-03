@@ -1,0 +1,21 @@
+racist= ["Gypsycrusader", "The nigg", "White people", "14 year old white grills"]
+print(racist)
+racist .extend(["Dave","Brian"])
+print(racist)
+print(racist[0])
+for i in enumerate(racist):   
+    print(i)
+gypsy= [] 
+gypsy.append("Riddle me")
+gypsy.append("this")
+gypsy.append("I'm loud")
+gypsy.append("abnoxious")
+gypsy.append("I like")
+gypsy.append("music that")
+gypsy.append("rhymes")
+gypsy.append("I'm a fraction of")
+gypsy.append("The population")
+gypsy.append("But commit")
+gypsy.append("Half the crimes")
+gypsy.append("Who am i?")
+print(gypsy[0])

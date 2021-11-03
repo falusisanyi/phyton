@@ -1,0 +1,6 @@
+wr = open("nagy.txt", 'w')
+wr.write("Nagy Sándor")
+wr.close()
+wr = open("nagys.txt",'a')
+wr.write("\n 2021.10.20.")
+wr.close()
