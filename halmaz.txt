@@ -1,0 +1,111 @@
+#halmaz + törlés
+halmaz = ['samsung', 'xiaomi', 'oppo', 'one note']
+print(halmaz)
+halmaz.clear()
+#copy
+halmaz.copy()
+print(halmaz)
+#két halmaz + különbség
+
+halmaz1 = {'irodalom', 'nyelvtan', 'infó'}
+halmaz2 = {'irodalom', 'nyelvtan', 'infó', 'angol'}
+halmaz1.difference()
+
+print('')
+
+#difference_update
+
+telo = {'usb-c', 'usb'}
+telo1 = {'lightning', 'usb-c'}
+telo.difference_update(telo1)
+telo1.difference_update(telo)
+print(telo)
+
+#intersection metódus
+
+pc = {'gpu', 'cpu', 'ram'}
+pc1 = {'cpu', 'ssd', 'alaplap'}
+pc2 = pc.intersection(pc1)
+print(pc2)
+
+#intersection_update
+#kiírja azokat az elemeket amik megtalálhatók mind a két halmazban, ha nincs akkor False lesz az eredmény
+
+yes = {'bruh', 'bruv', 'might'}
+yes1 = {'mate', 'maight', 'oi'}
+yes2 = yes.intersection_update(yes1)
+print(yes2)
+
+#isdisjoint
+#kiírja hogy az adott halmazokban van e hasonlóság ha nincs True ha van False
+print('')
+
+deez = {1, 2, 3}
+nuts = {4, 5, 6}
+
+print('van e valami disjoint? ', deez.isdisjoint(nuts))
+
+#issubset
+#kiírja hogy jelen van e az összes elem egy másik halmazban ha igen akkor True ha nem akkor False
+print('')
+
+joe = {69, 563, 453}
+mama = {69, 563, 453, 658, 758}
+
+#true
+print(joe.issubset(mama))
+#false
+print(mama.issubset(joe))
+
+#issuperset
+#kiírja hogy True vagy False ha a megadott halmazokban megtalálható minden elem mind a kettőben
+print('')
+
+mother = {1, 2, 3, 5, 76}
+candice = {1, 2, 3}
+
+#true
+print(mother.issuperset(candice))
+#false
+print(candice.issuperset(mother))
+
+#symmetric_difference()
+#kiírja azokat az elemeket amik nem találhatók az egyik halmazban de a másikban igen 
+print('')
+
+nomorebanging = {'a', 'b', 'c', 'd'}
+mydaughter = {'c', 'd', 'e'}
+
+print(nomorebanging.symmetric_difference(mydaughter))
+print(mydaughter.symmetric_difference(nomorebanging))
+
+#3 példa
+
+#pop
+#kiírja a kijelölt elemnek a megadott szöveget vagy értéket
+print('')
+
+medic = {'körte':6, 'cseresznye':3, 'dió':9}
+
+bag = medic.pop('körte')
+print(bag)
+
+#remove
+#törli a megadott elemet a halmazból
+
+print('')
+
+szamok = {36, 30, 613, 64, 73}
+
+szamok.remove(64)
+
+print('a legújabb számok listája', szamok)
+
+#union
+#összevonja a halmazokat és kiírja mind a kettőnek a tartalmát de nem ismétli meg azokat ami mind a kettőben megtalálható
+print('')
+
+europe = {'3', '4', '5'}
+europe1 = {'4', '5', '6'}
+
+print('európa összesítése', europe.union(europe1))
